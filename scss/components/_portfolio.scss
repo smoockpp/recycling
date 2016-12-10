@@ -1,0 +1,21 @@
+.portfolio {
+  width: 100%;
+  position: absolute;
+
+  top: 30%;
+  h3 {
+
+    text-align: center;
+    font-family: 'Play', Arial, sans-serif;
+    text-shadow: 1px 1px 3px $black;
+    @media #{$brk-narrow} {
+      font-size: 2em;
+    }
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}

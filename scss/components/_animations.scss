@@ -1,0 +1,119 @@
+/* Navbar animations */
+.toggle-menu-width-on {
+  animation: toggle-menu-width-on .5s ease-in-out .0s 1 normal forwards running;
+  opacity: 1 !important;
+}
+
+.toggle-menu-height-on {
+  animation: toggle-menu-height-on .5s ease-in-out .0s 1 normal forwards running;
+  opacity: 1 !important;
+}
+
+.toggle-menu-width-off {
+  animation: toggle-menu-width-off .4s ease-in-out .0s 1 normal forwards running;
+  opacity: 1 !important;
+}
+
+.toggle-menu-height-off {
+  animation: toggle-menu-height-off .4s ease-in-out .0s 1 normal forwards running;
+  opacity: 1 !important;
+}
+
+@keyframes toggle-menu-width-on {
+  from {
+    width: 0;
+
+  }
+  to {
+    width: 200px;
+  }
+}
+
+@keyframes toggle-menu-height-on {
+  from {
+    height: 0;
+    width: 200px;
+  }
+  to {
+    height: 245px;
+    width: 200px;
+
+  }
+}
+
+@keyframes toggle-menu-width-off {
+  from {
+    width: 200px;
+
+  }
+  to {
+    width: 0 ;
+  }
+}
+
+@keyframes toggle-menu-height-off {
+  from {
+    height: 245px;
+    width: 200px;
+
+  }
+  to {
+    height: 0;
+    width: 200px;
+  }
+}
+
+/* Animated class defines the divv to be following to have animation */
+.animated {
+
+}
+
+.slide-in-left {
+  animation: slide-in-left .5s ease-out .5s 1 normal forwards running;
+}
+
+.slide-out-left {
+  animation: slide-out-left .5s ease-out .0s 1 normal forwards running;
+}
+
+/* Main div slide in and out animation */
+@keyframes slide-out-left {
+    from {
+      left: 0;
+    }
+    to {
+      left: -100%;
+    }
+}
+
+
+
+
+@keyframes slide-in-left {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+
+
+@keyframes border{
+  0% {
+    box-shadow: 60px -60px 0 2px $haygrove-color, -60px -60px 0 2px $haygrove-color, -60px 60px 0 2px $haygrove-color, 60px 60px 0 2px $haygrove-color, 0 0 0 2px #E94E3D;
+  }
+  25% {
+    box-shadow: 0 -125px 0 2px $haygrove-color, -60px -60px 0 2px $haygrove-color, -60px 60px 0 2px $haygrove-color, 60px 60px 0 2px $haygrove-color, 0 0 0 2px #fff;
+  }
+  50% {
+    box-shadow: 0 -125px 0 2px $haygrove-color, -125px 0px 0 2px $haygrove-color, -60px 60px 0 2px $haygrove-color, 60px 60px 0 2px $haygrove-color, 0 0 0 2px #fff;
+  }
+  75% {
+    box-shadow: 0 -125px 0 2px $haygrove-color, -125px 0px 0 2px $haygrove-color, 0px 125px 0 2px $haygrove-color, 60px 60px 0 2px $haygrove-color, 0 0 0 2px #fff;
+  }
+  100% {
+    box-shadow: 0 -125px 0 2px $haygrove-color, -125px 0px 0 2px $haygrove-color, 0px 125px 0 2px $haygrove-color, 120px 40px 0 2px $haygrove-color, 0 0 0 2px #fff;
+  } 
+}

@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1em;
+ }
+
+
+
+#slider {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+header {
+  width: auto;
+  height: calc(100vh - 50px);
+  background: linear-gradient(transparentize($white, 1), transparentize($black, .3) 100%),
+              // linear-gradient(0deg, #fff, transparent),
+              $black url('../data/wood-forest-1.jpg') no-repeat center;
+
+  background-size: cover;
+  
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+// .bgvideo {
+//   background: $black;
+//   position: fixed;
+//   right: 0;
+//   bottom: 0;
+//   min-width: 100%;
+//   min-height: 100%;
+//   width: auto;
+//   height: auto;
+//   z-index: -9999;
+// }

@@ -1,0 +1,43 @@
+/* Header starts here */
+
+header {
+  
+  .container {
+    height: calc(100vh - 50px);
+    
+    h1 {
+      position: absolute;
+      color: $haygrove-color;
+      font-family: 'Play', Arial, sans-serif;
+      font-size: 2.5rem;
+      text-shadow: 1px -1px 3px $black;
+      text-align: left;
+      max-width: 260px;
+      left: 1em;
+      bottom: 2em;
+      
+      border-bottom: 2px solid $white;
+      @media #{$brk-max-height-320} {
+        bottom: 1em;
+        font-size: 2rem;
+      }
+      @media #{$brk-min-height-640} {
+         bottom: 5em;
+      }
+      @media #{$brk-min-height-1024} {
+         bottom: 7em;
+      }
+      @media #{$brk-tablets} {
+        max-width: 320px;
+        font-size: 2.5rem;
+      }
+      @media #{$brk-narrow} {
+        font-size: 3.25rem;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+      }
+      
+    }
+  }
+}
