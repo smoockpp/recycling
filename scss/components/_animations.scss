@@ -115,5 +115,31 @@
   }
   100% {
     box-shadow: 0 -125px 0 2px $haygrove-color, -125px 0px 0 2px $haygrove-color, 0px 125px 0 2px $haygrove-color, 120px 40px 0 2px $haygrove-color, 0 0 0 2px #fff;
-  } 
+  }
+}
+
+/* SVG animations */
+#reduce {
+  position: relative;
+  bottom: 260px;
+  width: 256px;
+  height: 256px;
+}
+
+#reduce-rect {
+  fill: transparent;
+  animation-play-state: running;
+  animation-name: reduce-rect;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes reduce-rect {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: $white;
+  }
 }

@@ -4,6 +4,8 @@ nav {
   padding: 5px 1em;
   height: 50px;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   text-align: center;
   z-index: 4;
   @media #{$brk-wide} {
@@ -13,7 +15,7 @@ nav {
 
 .logo {
   @extend %transition-all;
-  
+
 	margin: 0;
   float: left;
 	display: inline-block;
@@ -32,7 +34,7 @@ nav {
 		bottom: 15px;
 		color: $black;
 		z-index: 5;
-		
+
 	}
 	.circle {
 		display: inline-block;
@@ -46,7 +48,7 @@ nav {
     color: transparentize($color-1, .2) !important;
     box-shadow: 0 0 5px $white, inset 0 0 5px $white;
   }
-  
+
 }
 
 
@@ -134,8 +136,8 @@ nav {
   align-items: stretch;
   -webkit-justify-content: center;
   justify-content: center;
- 
-  
+  box-shadow: 0 -2px 1px transparentize($black, .8);
+
   .nav-item {
     @include flexbox();
     -webkit-align-items: center;
@@ -143,7 +145,7 @@ nav {
     text-align: center;
 		color: $black;
     width: 100%;
-    
+    height: 49px;
 		background: $haygrove-color;
 		margin-bottom: 1px;
     box-shadow: inset 0 0 30px transparentize($black, .7);
@@ -154,7 +156,7 @@ nav {
 				border-bottom: 2px solid $haygrove-color;
 			}
   	}
-    
+
     .nav-link {
       @extend %transition-all;
       background: transparent;
@@ -166,6 +168,7 @@ nav {
 			font-size: 0.725rem;
       padding: 15px;
       @media #{$brk-narrow} {
+        font-size: 0.85rem;
         padding: 5px 10px;
         box-shadow: none !important;
 				white-space: nowrap;

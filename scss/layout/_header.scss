@@ -1,10 +1,16 @@
 /* Header starts here */
 
 header {
-  
+  width: auto;
+  height: calc(100vh - 50px);
+  background: linear-gradient($white, transparent 99%),
+              linear-gradient(0deg, transparent, transparent),
+              $white url('../data/wood-forest-1.jpg') no-repeat center;
+
+  background-size: cover;
   .container {
     height: calc(100vh - 50px);
-    
+
     h1 {
       position: absolute;
       color: $haygrove-color;
@@ -12,11 +18,12 @@ header {
       font-size: 2.5rem;
       text-shadow: 1px -1px 3px $black;
       text-align: left;
+      font-weight: normal;
       max-width: 260px;
       left: 1em;
       bottom: 2em;
-      
-      border-bottom: 2px solid $white;
+
+      border-bottom: 2px solid transparentize($black, .3);
       @media #{$brk-max-height-320} {
         bottom: 1em;
         font-size: 2rem;
@@ -32,12 +39,18 @@ header {
         font-size: 2.5rem;
       }
       @media #{$brk-narrow} {
-        font-size: 3.25rem;
+        max-width: 500px;
+        font-size: 3.5rem;
         left: 50%;
         transform: translate(-50%);
         text-align: center;
       }
-      
+      @media #{$brk-wide} {
+        bottom: 4em;
+        font-size: 4rem;
+        border-bottom: 3px solid transparentize($black, .2);
+      }
+
     }
   }
 }

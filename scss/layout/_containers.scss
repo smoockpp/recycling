@@ -16,14 +16,8 @@
 }
 
 header {
-  width: auto;
-  height: calc(100vh - 50px);
-  background: linear-gradient(transparentize($white, 1), transparentize($black, .3) 100%),
-              // linear-gradient(0deg, #fff, transparent),
-              $black url('../data/wood-forest-1.jpg') no-repeat center;
 
-  background-size: cover;
-  
+
 }
 
 section:after {
