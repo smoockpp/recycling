@@ -119,19 +119,43 @@
 }
 
 /* SVG animations */
+
+
+
 #reduce {
+  left: 50%;
   position: relative;
-  bottom: 260px;
+  bottom: 500px;
   width: 256px;
   height: 256px;
+  border-radius: 1em;
+  transform: translate(-50%) scale(.5);
 }
+
 
 #reduce-rect {
   fill: transparent;
+}
+
+.arrows {
+  fill: transparent;
+}
+
+.rect-anim {
   animation-play-state: running;
   animation-name: reduce-rect;
   animation-duration: 2s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+
+.arrows-anim {
+  animation-play-state: running;
+  animation-name: reduce-arrows;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 0;
   animation-fill-mode: forwards;
 }
 
@@ -141,5 +165,26 @@
   }
   to {
     fill: $white;
+  }
+}
+
+@keyframes reduce-arrows {
+  0% {
+    fill: transparent;
+  }
+  25% {
+    fill: $haygrove-color;
+  }
+  50% {
+    fill: $white;
+  }
+  75% {
+    fill: $haygrove-color;
+  }
+  85% {
+    fill: $white;
+  }
+  100% {
+    fill: $haygrove-color;
   }
 }

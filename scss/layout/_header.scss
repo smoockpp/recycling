@@ -23,7 +23,7 @@ header {
       left: 1em;
       bottom: 2em;
 
-      border-bottom: 2px solid transparentize($black, .3);
+      border-bottom: 2px solid $white;
       @media #{$brk-max-height-320} {
         bottom: 1em;
         font-size: 2rem;

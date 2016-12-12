@@ -2319,6 +2319,7 @@
   .re-bg {
     width: 100%;
     height: 480px;
+
   }
   .reduce {
     @extend %transition-all;
@@ -2327,16 +2328,42 @@
     background: $haygrove-color;
     .re-inner {
       @extend %transition-all;
-      opacity: .1;
+      position: relative;
       width: 100%;
+      max-width: 100vh;
       height: 100%;
-      background-color: $haygrove-color;
-      background-image: url('../data/reduce-bg.jpg');
-      background-position: center;
+      background: linear-gradient(transparentize($haygrove-color, .1), transparentize($haygrove-color, .1)),
+
+                  $haygrove-color url('../data/reduce-bg.jpg')  no-repeat center;
       background-size: cover;
+      overflow: hidden;
+    }
+    .re-heading {
+      position: relative;
+      bottom: 460px;
+      margin: 0;
+      font-family: 'Play', sans-serif;
+      font-weight: lighter;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2em;
+      display: none;
+    }
+    .re-paragraph {
+      color: $white;
+      position: relative;
+      bottom: 480px;
+      margin: 0 auto;
+      font-family: helvetica, sans-serif;
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      text-align: center;
+      width: 80%;
+      display: none;
     }
     &:hover .re-inner {
       transform: scale(1.2);
+
     }
     &:hover {
       background: darken($haygrove-color, 10%);
